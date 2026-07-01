@@ -14,7 +14,7 @@ public class Hello {
     System.out.println("ploshad pryamougolnika so storonami "+m.a+" i "+m.b+" = " + m.area());
 
     Point p1 = new Point(0,0);
-    Point p2 = new Point(3,3);
+    Point p2 = new Point(3,10);
 
     System.out.println("Rasstoyanie mezhdu tochkami = "+ Point.Distance(p1,p2));
   }
