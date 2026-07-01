@@ -7,21 +7,14 @@ public class hello {
     hwrld("Max");
 
     Square s = new Square(7);
-    System.out.println("ploshad kvadrata so storonoi "+ s.l + " = "+ area(s));
+    System.out.println("ploshad kvadrata so storonoi "+ s.l + " = "+ s.area());
 
     Rectangle m = new Rectangle(6,10);
-    System.out.println("ploshad pryamougolnika so storonami "+m.a+" i "+m.b+" = " + area(m));
+    System.out.println("ploshad pryamougolnika so storonami "+m.a+" i "+m.b+" = " + m.area());
   }
 
   public static void hwrld(String somebody){
     System.out.println("Hello, "+ somebody +"!");
   }
 
-  public static double area(Square s){
-    return s.l*s.l;
-  }
-
-  public static double area(Rectangle m){
-    return m.a*m.b;
-  }
 }
