@@ -4,5 +4,13 @@ id 'application'
 }
 
 application {
-mainClass.set('hello')
+mainClass.set('Hello')
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.testng:testng:7.12.0")
 }
