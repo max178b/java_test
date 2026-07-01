@@ -5,22 +5,23 @@ public class hello {
     hwrld("world");
     hwrld("user");
     hwrld("Max");
-    double l = 7;
-    double a = 6;
-    double b = 10;
-    System.out.println("ploshad kvadrata so storonoi "+ l + " = "+ area(l));
-    System.out.println("ploshad pryamougolnika so storonami "+a+" i "+b+" = " + area(a,b));
+
+    Square s = new Square(7);
+    System.out.println("ploshad kvadrata so storonoi "+ s.l + " = "+ area(s));
+
+    Rectangle m = new Rectangle(6,10);
+    System.out.println("ploshad pryamougolnika so storonami "+m.a+" i "+m.b+" = " + area(m));
   }
 
   public static void hwrld(String somebody){
     System.out.println("Hello, "+ somebody +"!");
   }
 
-  public static double area(double len){
-    return len*len;
+  public static double area(Square s){
+    return s.l*s.l;
   }
 
-  public static double area(double a, double b){
-    return a*b;
+  public static double area(Rectangle m){
+    return m.a*m.b;
   }
 }
